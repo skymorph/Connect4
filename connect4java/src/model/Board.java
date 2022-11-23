@@ -31,13 +31,13 @@ public class Board {
         if(colToAdd >= 0 && colToAdd < columns) {
             // we can add
             if(ourBoard[0][colToAdd] == null) {
-              //  boolean addedThePiece = false;
+              
                 int addedRow = -1;
                 for(int row = rows - 1; row >= 0; row--)
                     if(ourBoard[row][colToAdd] == null) {
                         ourBoard[row][colToAdd] = new Piece();
                         ourBoard[row][colToAdd].setColor(color);
-                       // addedThePiece = true;
+                       
                         addedRow = row;
                         break;
                     }
